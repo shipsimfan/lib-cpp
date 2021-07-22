@@ -1,0 +1,4 @@
+#ifndef __LIB_CPP_IOSTREAM
+#define __LIB_CPP_IOSTREAM
+
+#endif
