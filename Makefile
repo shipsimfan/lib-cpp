@@ -7,7 +7,7 @@ LIB_INSTALL_DIR := $(SYSROOT_DIR)/los/lib
 INCLUDE_INSTALL_DIR := $(SYSROOT_DIR)/los
 
 # SOURCE FILES
-SRC_FILES := $(shell find $(SRC_DIR) -name '*.c')
+SRC_FILES := $(shell find $(SRC_DIR) -name '*.cpp')
 
 # OBJECT FILES
 OBJ_FILES := $(SRC_FILES:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
@@ -16,7 +16,7 @@ OBJ_FILES := $(SRC_FILES:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 TARGET := ./libc++.a
 
 # PROGRAMS
-CC := clang
+CC := clang++
 CC_FLAGS := --target=x86_64-los --sysroot=$(SYSROOT_DIR) -Wall -g -I$(INCLUDE_DIR) -c
 
 AR := ar
